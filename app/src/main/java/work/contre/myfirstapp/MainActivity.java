@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void onClickButton(android.view.View view) {
-        TextView bmiScore =(TextView)this.findViewById(R.id.bmiScore);
-        EditText heightForm =(EditText)this.findViewById(R.id.heightForm);
-        EditText weightForm =(EditText)this.findViewById(R.id.weightForm);
+        TextView bmiScore = this.findViewById(R.id.bmiScore);
+        EditText heightForm = this.findViewById(R.id.heightForm);
+        EditText weightForm = this.findViewById(R.id.weightForm);
 
         String strHeight,strWeight;
         strHeight = heightForm.getText().toString();
