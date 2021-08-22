@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.*;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         weight = Double.parseDouble(strWeight);
         height /= 100;
         bmi = weight / (height * height);
-        String msg = "BMIスコア：" + bmi;
+        String msg = String.format(Locale.US,"BMIスコア：%.1f", bmi);
         bmiScore.setText(msg);
 
 
